@@ -84,3 +84,22 @@ td{
     border:1px solid #cccccc;
     padding:0px 5px 0px 5px;
 }
+
+/* MOBİL CİHAZLAR İÇİN AYARLAR*/
+
+@media(max-width: 720px){
+    .main{
+        margin-left: 30%;
+    }
+    body{
+        font-size:24px;
+    }
+    .sidebar{
+        width: 30%;
+        font-size:30px;
+    }
+    .sidebar-item{
+        height: 15%;
+        font-size:30px;
+    }
+}
