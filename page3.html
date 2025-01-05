@@ -28,7 +28,7 @@
             </div>
             <p>
                 <span class="snippet">git checkout [hash]<a href="#2"><sup>2</sup></a></span></span> kullanılarak önceki commit'lere geçiş sağlanabilir. Buradaki hash değeri <span class="snippet">git log<a href="#1"><sup>1</sup></a></span></span> komutunun çıktısında her bir commit'ten sonraki commit'i temsil eden veridir. Bu komutu uygulamak içinde bulunduğunuz daldan çıkarır eğer bu commit'ten itibaren değişiklikler yapılmak istenirse yeni bir dal açılarak devam edilebilir.<br><br>
-                <span class="snippet">git reset --[option]<a href="#4"><sup>4</sup></a></span></span> komutunun kullanımı:<br>
+                <span class="snippet">git reset --[option]<a href="#3"><sup>3</sup></a></span></span> komutunun kullanımı:<br>
                 <br><span class="snippet">git reset --soft</span><br>
                 Bu komut kullanıldığında en son commit'e dönülür ama stage aşamasında veya şu anki dosyalarda bir değişiklik olmaz. Bu sayede unutulmuş küçük değişikler veya commit mesajı yapılandırılarak tekrar commit kaydedilebilir.
                 <br><span class="snippet">git reset --mixed</span><br>
@@ -38,8 +38,8 @@
             </p>
             <h3>Branch(Dal) Kontrolü</h3>
             <p>
-                Eğer projeye belli bir özellik eklenecekse bu özellik yeni bir dal açılarak bu özelliği ekleyecek kişi bu dal üzerinde ana kodu bozmadan özellik kararlı olana kadar çalışılabilir.<span class="snippet">git branch [isim]<a href="#4"><sup>4   </sup></a></span></span> komutuna isim yerine dalın ismi girilerek yeni dal oluşturulur.<br><br>
-                Projedeki dallar görmek istenilirse <span class="snippet">git branch<a href="#3"><sup>3</sup></a></span></span> komutu verilir.
+                Eğer projeye belli bir özellik eklenecekse bu özellik yeni bir dal açılarak bu özelliği ekleyecek kişi bu dal üzerinde ana kodu bozmadan özellik kararlı olana kadar çalışılabilir.<span class="snippet">git branch [isim]<a href="#4"><sup>4</sup></a></span></span> komutuna isim yerine dalın ismi girilerek yeni dal oluşturulur.<br><br>
+                Projedeki dallar görmek istenilirse <span class="snippet">git branch<a href="#4"><sup>4</sup></a></span></span> komutu verilir.
             </p>
             <div class="image-container">
                 <img src="images/git_branch.png"></img>
