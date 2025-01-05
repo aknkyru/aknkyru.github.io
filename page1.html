@@ -7,56 +7,35 @@
     <div class="container">
         <div class="sidebar">
             <!-- NAVİGASYON -->
-            <a href="index.html"><button class="sidebar-item">Home</button></a>
+            <a href="index.html"><button class="sidebar-item">Ana Sayfa</button></a>
             <div class="style-line"></div>
-            <a href="page1.html"><button class="sidebar-item">Page 1</button></a>
+            <a href="page1.html"><button class="selected-sidebar-item">Repository</button></a>
             <div class="style-line"></div>
-            <a href="page2.html"><button class="sidebar-item">Page 2</button></a>
+            <a href="page2.html"><button class="sidebar-item">Stage ve Commit</button></a>
             <div class="style-line"></div>
-            <a href="page3.html"><button class="sidebar-item">Page 3</button></a>
+            <a href="page3.html"><button class="sidebar-item">Sürüm Kontrolü</button></a>
             <div class="style-line"></div>
-            <a href="page4.html"><button class="sidebar-item">Page 4</button></a>
+            <a href="page4.html"><button class="sidebar-item">Uzak Repository</button></a>
         </div>
         <div class="main">
-            <div class="element">
-                <!-- TABLO -->
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Sayfa No</th>
-                            <th scope="col">Sayfa İsmi</th>
-                            <th scope="col">Sayfa İçeriği</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">0</th>
-                            <td>Ana Sayfa</td>
-                            <td>Giriş sayfası olarak iş görür</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>İçerik Tablosu</td>
-                            <td>Bu sayfa içerikleri tablo olarak gösterir</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>İçerik Tablosu</td>
-                            <td>Bu sayfa içerikleri tablo olarak gösterir</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>İçerik Tablosu</td>
-                            <td>Bu sayfa içerikleri tablo olarak gösterir</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>İçerik Tablosu</td>
-                            <td>Bu sayfa içerikleri tablo olarak gösterir</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <h2>Repository</h2>
+            <p>
+                Repository, üzerinde çalışılan yazılımın ve bu yazılımın sürümlerinin bulunduğu bir dosya dizinidir.
+            </p>
+            <h2>Repository Oluşturma</h2>
+            <h3>Yerel Repository Oluşturma</h3>
+            <p>
+                Yazılım geliştirmesinin yapılacağı dosya dizininin içerisine komut satırıyla girildiğinde <span class="snippet">git init</span> komutu verildiğinde bir repository oluşturulmuş olur.
+            </p>
+            <h3>GitHub Kullanarak Oluşturma</h3>
+            <p>
+                1.Uzak Repository Ekleme<br>
+                Yerel bir repository uzak bir repository'e bağlanmak istendiğinde uygulanır.<span class="snippet">git add remote [isim] [url]</span> isim uzak repository'nin ismi olup genellikle "Origin"dir. Url ise GitHub repository'sinin adresidir.
+                <br><br>
+                2.Klonlama<br>
+                GitHub üzerinden yeni repository oluşturma seçeneği seçildiğinde bazı ayarlar ve repository ismi istenilir. Uygun kısımlar doldurulduktan sonra repository oluşturulur.
+                <br>Oluşan boş repository <span class="snippet">git clone [url]</span> url kısmına GitHub'dan repository'e gelindiğinde "Code" butonuna basıldığında https bağlantısınını kopyalanmasıyla komut satırının bulunduğu dizine kopyalanır. 
+            </p>
         </div>
     </div>
 </body>

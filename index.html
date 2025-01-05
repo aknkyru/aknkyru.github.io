@@ -7,23 +7,71 @@
     <div class="container">
         <!-- NAVİGASYON -->
         <div class="sidebar">
-            <a href="index.html"><button class="sidebar-item">Home</button></a>
+            <a href="index.html"><button class="selected-sidebar-item">Ana Sayfa</button></a>
             <div class="style-line"></div>
-            <a href="page1.html"><button class="sidebar-item">Page 1</button></a>
+            <a href="page1.html"><button class="sidebar-item">Repository</button></a>
             <div class="style-line"></div>
-            <a href="page2.html"><button class="sidebar-item">Page 2</button></a>
+            <a href="page2.html"><button class="sidebar-item">Stage ve Commit</button></a>
             <div class="style-line"></div>
-            <a href="page3.html"><button class="sidebar-item">Page 3</button></a>
+            <a href="page3.html"><button class="sidebar-item">Sürüm Kontrolü</button></a>
             <div class="style-line"></div>
-            <a href="page4.html"><button class="sidebar-item">Page 4</button></a>
+            <a href="page4.html"><button class="sidebar-item">Uzak Repository</button></a>
         </div>
+        <!-- ANA İÇERİK -->
         <div class="main">
-            <h1>Lorem ipsum dolor sit amet</h1>
+            <h1>KOMUT SATIRI İLE TEMEL DÜZEYDE GIT KULLANIMI</h1>
+            <h2>İçerik</h2>
+            <p>Bu sayfada temel olarak konunun girişi yapılmaktadır. İçerik Tablosundan diğer sayfalarda ne anlatıldığıyla ilgili daha fazla bilgi edinilebilir.</p>
+
+            <div class="element">
+                <!-- TABLO -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Sayfa No</th>
+                            <th scope="col">Sayfa İsmi</th>
+                            <th scope="col">Sayfa İçeriği</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">0</th>
+                            <td>Ana Sayfa</td>
+                            <td>Giriş sayfasıdır. Konunun kısa özeti bulunur.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Repository</td>
+                            <td>Repository oluşturma yolları anlatılır.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Stage ve Commit</td>
+                            <td>Stage ve Commit kavramlarını ele alınır.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Sürüm Kontrolü</td>
+                            <td>Sürümlerin hangi yollarla kontrol edildiği anlatılır.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Uzak Repository</td>
+                            <td>Uzak repository etkileşimleri anlatılır.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h2>Git Nedir?</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit fringilla libero et sagittis. In gravida sed turpis a euismod. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ullamcorper ligula sit amet orci finibus, eu finibus dolor elementum. Aliquam non pharetra odio. Donec vel suscipit mauris, eu pretium nunc. Integer non viverra metus, at laoreet risus. Nulla sit amet leo id erat gravida convallis. In magna orci, fringilla sed ultricies at, sagittis vel tellus. Vestibulum laoreet tellus ut dui eleifend, vel hendrerit erat cursus. Quisque a ligula eget odio bibendum tristique.
-                Nunc sit amet semper velit. Duis ac tempus ex. Donec nibh sapien, facilisis vel erat vel, consequat placerat turpis. Praesent faucibus libero vel tortor mollis, in porta libero placerat. Ut ac urna a arcu volutpat fringilla. Nullam lobortis libero sed quam commodo, in venenatis enim rutrum. Donec vel suscipit nisi, at tempor lorem. Aenean non nunc erat. Vivamus quis purus quis est semper porta vehicula non sapien.
-                Mauris accumsan lorem non arcu venenatis bibendum. Aliquam vel leo at justo consequat vulputate. Phasellus sed justo ligula. Integer finibus justo lacinia porttitor pulvinar. Vivamus fermentum nisl vel neque bibendum, ac tempor ligula faucibus. Praesent sit amet nulla diam. Suspendisse imperdiet tortor ac mi tincidunt, id cursus magna facilisis. Cras tristique, lectus vel rutrum rhoncus, libero ex consectetur turpis, in ultricies felis erat id elit. Curabitur sed magna condimentum, vehicula ligula sed, volutpat ante.
-                Nam vestibulum facilisis dignissim. Duis ut luctus ligula, et molestie libero. Cras non molestie libero. Vestibulum laoreet enim augue, at sagittis lectus blandit non. Quisque iaculis neque vel egestas dapibus. Suspendisse luctus ornare fringilla. Ut tincidunt sapien in turpis sollicitudin pretium. Curabitur vitae volutpat odio, quis imperdiet justo. Sed scelerisque bibendum risus, sed egestas turpis ultrices vel. Class aptent taciti sociosqu ad litora.
+                Git kısaca bir versiyon kontrol sistemidir. Bir yazılım geliştirirken birden fazla kişinin birden fazla sürüm geliştirmesi yoluyla iş birliği içerisinde çalıştığı durumlarda kullanılır.
+            </p>
+            <h2>Git'in İlkeleri</h2>
+            <p>
+                Git kullanımı genelde "repository" adı verilen ve çalışma dizinini içerisinde bulunduran bir dosyanın oluşturulmasıyla başlar. Daha sonrasında uzak bir "repository" eklenir.
+                Belirli bir ilerlemeden sonra genelde projede herhangi bir amaca ulaşıldığında yapılan ilerlemenin kaydedilmesi gerektiğinde önce "stage" aşamasında hangi değişikliklerin bir "commit" içerisine kaydedileceği gözden geçirilir.
+                Gözden geçirme bittikten sonra bu değişikler bir "commit" içerisine kaydedilir. Daha sonra istenilirse bu değişiklikler uzak "repository"e yüklenebilir. Aynı zamanda üzerine çalışılan yazılımı geliştiren diğer kişilerin üzerinde çalıştığı "branch"ler birleştirilerek birlikte çalışma sağlanır.
             </p>
         </div>
     </div>
