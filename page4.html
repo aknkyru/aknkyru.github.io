@@ -18,7 +18,39 @@
             <a href="page4.html"><button class="selected-sidebar-item">Uzak Repository</button></a>
         </div>
         <div class="main">
-            <p>Test</p>
+            <h2>Uzak Repository Etkileşimleri</h2>
+            <p>
+                Uzak repository üzerinde birlikte çalışılmak için önceden belirlenmiş başka bir bilgisayar üzerindeki repository'dir.
+            </p>
+            <h3>Uzak Repository'den Güncelleme Almak</h3>
+            <p>
+                Bunu yapmanın 2 yolu vardır:
+                <br>1. <span class="snippet">git fetch<a href="#1"><sup>1</sup></a></span></span></span><br>
+                Bu komutu kullanmak uzak repository'deki değişimleri indirir. Ama otomatik olarak birleştirmez. Birleştirmek için
+                <span class="snippet">git merge [uzak repository]/[dal ismi]<a href="#2"><sup>2</sup></a></span></span></span> komutu kullanılır. Uzak repository genelde "origin"dir. Dal ismi şu anki dal ile birleştirmek istediğiniz uzaktaki daldır.
+                İki dalda da aynı kodda bir değişim yapıldıysa bir birleşme anlaşmazlığı(merge conflict) oluşur bu iki değişimden hangisinin saklanmak istediği el ile seçilir daha sonra commit ile kaydedilerek bu anlaşmazlık çözülmüş olur.<br><br>
+
+                Bir diğer yöntem ise <span class="snippet">git rebase [uzak repository]/[dal ismi]<a href="#3"><sup>3</sup></a></span></span></span> komutunu kullanmaktır.
+                 Şu anda bulunduğuz dalı belirtmiş olduğunuz başka bir daldaki değişiklikleri sırasıyla bulunduğunuz dala uygular daha sonra bulunmuş olduğunuz dal diğer dalda bulunmayan değişiklikler içeriyorsa bu değişiklikleri uygular.<br>
+                <br>2. <span class="snippet">git pull<a href="#4"><sup>4</sup></a></span></span></span><br>
+                Bu komut varsayılan olarak <span class="snippet">git fetch</span> ve <span class="snippet">git merge</span> işlemlerini gerçekleştirir.
+            </p>
+            <h3>Uzak Repository'e Güncelleme Yapmak</h3>
+            <p>
+                Bu işlem <span class="snippet">git push<a href="#5"><sup>5</sup></a></span></span></span> komutuyla yapılır. Şu anki seçili dal'ı uzağa yükler. Ancak şu anki dalın uzakta bir karşılığı yoksa öncelikle bu dalın uzaktaki karşılığı olmalıdır eğer yoksa bu komut ile bu dal yüklenebilir:
+                <span class="snippet">git push [uzak repository] [dal ismi]</span>.<br>
+                <span class="snippet">git push origin --delete ornek_dal<a href="#6"><sup>6</sup></a></span></span></span> bu örnek kullanım kuralları takip edilerek uzaktaki bir dal silinebilir.
+            </p>
+            <div class="footnote-container">
+                <div class="footnotes">
+                    <a href="https://git-scm.com/docs/git-fetch" id="1">1. https://git-scm.com/docs/git-fetch</p>
+                    <a href="https://git-scm.com/docs/git-merge" id="2">2. https://git-scm.com/docs/git-merge</p>
+                    <a href="https://git-scm.com/docs/git-rebase" id="3">3. https://git-scm.com/docs/git-rebase</p>
+                    <a href="https://git-scm.com/docs/git-pull" id="4">4. https://git-scm.com/docs/git-pull</p>
+                    <a href="https://git-scm.com/docs/git-push" id="5">5. https://git-scm.com/docs/git-push</p>
+                    <a href="https://git-scm.com/docs/git-push#Documentation/git-push.txt---delete" id="6">6. https://git-scm.com/docs/git-push#Documentation/git-push.txt---delete</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

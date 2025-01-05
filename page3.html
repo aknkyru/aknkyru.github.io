@@ -21,14 +21,14 @@
             <h2>Sürüm Konrolü</h2>
             <p>Sürüm kontrolü farklı commit'lerin ve farklı dallar arasında seçim yaparak sağlanır.</p>
             <h3>Farklı Commit'lere Geçiş</h3>
-            <p>Eğer herhangi bir nedenden dolayı önceki projede önceki sürümlere geçmek gerekirse <span class="snippet">git log</span> komutuyla önceki sürümler görülebilir.</p>
+            <p>Eğer herhangi bir nedenden dolayı önceki projede önceki sürümlere geçmek gerekirse <span class="snippet">git log<a href="#1"><sup>1</sup></a></span></span> komutuyla önceki sürümler görülebilir.</p>
             <div class="image-container">
                 <img src="images/git_log.png"></img>
                 <span class="caption">git log komutunun çıktısının bir kısmı</span>
             </div>
             <p>
-                <span class="snippet">git checkout [hash]</span> kullanılarak önceki commit'lere geçiş sağlanabilir. Buradaki hash değeri <span class="snippet">git log</span> komutunun çıktısında her bir commit'ten sonraki commit'i temsil eden veridir. Bu komutu uygulamak içinde bulunduğunuz daldan çıkarır eğer bu commit'ten itibaren değişiklikler yapılmak istenirse yeni bir dal açılarak devam edilebilir.<br><br>
-                <span class="snippet">git reset --[option]</span> komutunun kullanımı:<br>
+                <span class="snippet">git checkout [hash]<a href="#2"><sup>2</sup></a></span></span> kullanılarak önceki commit'lere geçiş sağlanabilir. Buradaki hash değeri <span class="snippet">git log<a href="#1"><sup>1</sup></a></span></span> komutunun çıktısında her bir commit'ten sonraki commit'i temsil eden veridir. Bu komutu uygulamak içinde bulunduğunuz daldan çıkarır eğer bu commit'ten itibaren değişiklikler yapılmak istenirse yeni bir dal açılarak devam edilebilir.<br><br>
+                <span class="snippet">git reset --[option]<a href="#4"><sup>4</sup></a></span></span> komutunun kullanımı:<br>
                 <br><span class="snippet">git reset --soft</span><br>
                 Bu komut kullanıldığında en son commit'e dönülür ama stage aşamasında veya şu anki dosyalarda bir değişiklik olmaz. Bu sayede unutulmuş küçük değişikler veya commit mesajı yapılandırılarak tekrar commit kaydedilebilir.
                 <br><span class="snippet">git reset --mixed</span><br>
@@ -38,16 +38,24 @@
             </p>
             <h3>Branch(Dal) Kontrolü</h3>
             <p>
-                Eğer projeye belli bir özellik eklenecekse bu özellik yeni bir dal açılarak bu özelliği ekleyecek kişi bu dal üzerinde ana kodu bozmadan özellik kararlı olana kadar çalışılabilir.<span class="snippet">git branch [isim]</span> komutuna isim yerine dalın ismi girilerek yeni dal oluşturulur.<br><br>
-                Projedeki dallar görmek istenilirse <span class="snippet">git branch</span> komutu verilir.
+                Eğer projeye belli bir özellik eklenecekse bu özellik yeni bir dal açılarak bu özelliği ekleyecek kişi bu dal üzerinde ana kodu bozmadan özellik kararlı olana kadar çalışılabilir.<span class="snippet">git branch [isim]<a href="#4"><sup>4   </sup></a></span></span> komutuna isim yerine dalın ismi girilerek yeni dal oluşturulur.<br><br>
+                Projedeki dallar görmek istenilirse <span class="snippet">git branch<a href="#3"><sup>3</sup></a></span></span> komutu verilir.
             </p>
             <div class="image-container">
                 <img src="images/git_branch.png"></img>
                 <span class="caption">git branch komutunun çıktısı</span>
             </div>
             <p>
-                Dallar arasında geçiş yapılmak istenirse <span class="snippet">git checkout [dal ismi]</span> komutu kullanılır. Örneğin <span class="snippet">git checkout main</span> komutu "main" dalına geçişi sağlar.
+                Dallar arasında geçiş yapılmak istenirse <span class="snippet">git checkout [dal ismi]<a href="#2"><sup>2</sup></a></span></span> komutu kullanılır. Örneğin <span class="snippet">git checkout main<a href="#2"><sup>2</sup></a></span></span></span> komutu "main" dalına geçişi sağlar.
             </p>
+            <div class="footnote-container">
+                <div class="footnotes">
+                    <a href="https://git-scm.com/docs/git-log" id="1">1. https://git-scm.com/docs/git-log</p>
+                    <a href="https://git-scm.com/docs/git-checkout" id="2">2. https://git-scm.com/docs/git-checkout</p>
+                    <a href="https://git-scm.com/docs/git-reset" id="3">3. https://git-scm.com/docs/git-reset</p>
+                    <a href="https://git-scm.com/docs/git-branch" id="4">4. https://git-scm.com/docs/git-branch</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
